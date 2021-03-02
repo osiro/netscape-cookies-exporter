@@ -1,0 +1,6 @@
+src
+typings
+.dockerignore
+.editorconfig
+.eslintrc.json
+tsconfig.json
