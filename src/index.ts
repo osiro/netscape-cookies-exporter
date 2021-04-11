@@ -13,16 +13,24 @@ const program = new Command();
 program
   .option("-u, --url <full path url>", "The URL to get the cookies from.")
   .option("-o, --output <path>", "Absolute path to export the cookies.")
-  .option("-r, --resolution <HeightxWidth>", "Height and Width of the screen in pixels.", "1280x800")
-  .option("-ua, --userAgent <name>", "Custom user-agent", "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/89.0.4389.90 Safari/537.36.")
+  .option(
+    "-r, --resolution <HeightxWidth>",
+    "Height and Width of the screen in pixels.",
+    "1280x800"
+  )
+  .option(
+    "-ua, --userAgent <name>",
+    "Custom user-agent",
+    "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/89.0.4389.90 Safari/537.36."
+  )
   .parse(process.argv);
 
 const options = program.opts();
 const url = options.url as string;
 const cookiesFilePath = options.output as string;
 const screenResolution = options.resolution as string;
-const height = screenResolution.split("x")[1] as string;
-const width = screenResolution.split("x")[0] as string;
+const height = screenResolution.split("x")[1];
+const width = screenResolution.split("x")[0];
 const userAgent = options.userAgent as string;
 const questions = [
   {
