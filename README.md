@@ -1,12 +1,7 @@
-[![view on npm](http://img.shields.io/npm/v/netscape-cookies-exporter
-.svg)](https://www.npmjs.org/package/netscape-cookies-exporter
-)
-[![npm module downloads per month](http://img.shields.io/npm/dm/netscape-cookies-exporter
-.svg)](https://www.npmjs.org/package/netscape-cookies-exporter
-)
+[![view on npm](http://img.shields.io/npm/v/netscape-cookies-exporter.svg)](https://www.npmjs.org/package/netscape-cookies-exporter)
+[![npm module downloads per month](http://img.shields.io/npm/dm/netscape-cookies-exporter.svg)](https://www.npmjs.org/package/netscape-cookies-exporter)
 
 # netscape-cookies-exporter
-
 
 Exports your cookies to the Netscape cookie file format which is compatible with wget, curl, youtube-dl and more.
 
@@ -20,11 +15,9 @@ Installation can be done in any of the following platform - Windows, Linux
 
 ### Windows
 
-Install [Node.js](https://nodejs.org/) v12 or higher. Then install netscape-cookies-exporter
- with npm:
+Install [Node.js](https://nodejs.org/) v12 or higher. Then install netscape-cookies-exporter with npm:
 
     npm install -g netscape-cookies-exporter
-
 
 ### Linux
 
@@ -32,11 +25,9 @@ In Linux you can either install for all users or just the current user. In eithe
 
 #### Option A: Install for All Users
 
-Install netscape-cookies-exporter
- globally with npm:
+Install netscape-cookies-exporter globally with npm:
 
-    sudo npm install -g netscape-cookies-exporter
- --unsafe-perm
+    sudo npm install -g netscape-cookies-exporter --unsafe-perm
 
 Puppeteer doesn't install globally with execution permissions for all users so you'll need to modify them:
 
@@ -53,23 +44,18 @@ First configure npm to install global packages in [your home directory](https://
     echo 'export PATH=~/.npm-global/bin:$PATH' >> ~/.profile
     source ~/.profile
 
-Then install netscape-cookies-exporter
-:
+Then install netscape-cookies-exporter:
 
     npm install -g netscape-cookies-exporter
 
-
-Now just run `netscape-cookies-exporter
-`.
+Now just run `netscape-cookies-exporter`.
 
 ## Usage
 
-To run netscape-cookies-exporter
-:
+To run netscape-cookies-exporter:
 
 ```bash
-netscape-cookies-exporter
- -u https://google.com -o cookies.txt
+netscape-cookies-exporter -u https://google.com -o cookies.txt
 ```
 
 What happens next:
