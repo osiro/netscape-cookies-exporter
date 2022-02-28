@@ -1,6 +1,6 @@
 {
   "name": "netscape-cookies-exporter",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "description": "Exports your cookies to the Netscape cookie file format which is compatible with wget, curl, youtube-dl and more.",
   "main": "index.js",
   "author": {
