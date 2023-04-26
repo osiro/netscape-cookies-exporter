@@ -35,7 +35,7 @@
     "node": ">=12.0"
   },
   "bin": {
-    "netscape-cookie-exporter": "dist/index.js"
+    "netscape-cookies-exporter": "dist/index.js"
   },
   "scripts": {
     "start": "ts-node-dev src/index.ts",
